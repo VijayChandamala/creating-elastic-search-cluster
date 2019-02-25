@@ -1,0 +1,12 @@
+# sudo sysctl -w vm.max_map_count=262144 (command for increasing heap size after creating VM)
+# sudo docker exec -it elastic bash (entering the container)
+# docker run -p 9200:9200 --name elastic -d -v /home/vagrant/elasticsearch:/usr/share/elasticsearch elasticsearch:6.6.0 (volume mounting, copying back the config file)
+# sudo chown -R 1000:1000 elasticsearch ( config the ports )
+# restart container
+# curl -XPUT 'localhost:9200/actors/1/_create' -H 'Content-Type: application/json' -d'
+  {
+    "timestamp": "2017-11-21T06:18:58.079Z",
+    "name": "A",
+    "tags": ["Ford","Nissan","Honda"] 
+  }' 
+  
