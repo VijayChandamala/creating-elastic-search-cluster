@@ -1,0 +1,9 @@
+cluster.name: "ElasticAdmin"
+node.name: master
+node.master: true
+node.data: true
+network.host: 0.0.0.0
+network.bind_host: 0.0.0.0
+network.publish_host: 192.168.43.81
+discovery.zen.minimum_master_nodes: 2
+discovery.zen.ping.unicast.hosts: [192.168.43.81,192.168.43.82,192.168.43.83]
