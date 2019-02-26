@@ -8,5 +8,6 @@
     "timestamp": "2017-11-21T06:18:58.079Z",
     "name": "A",
     "tags": ["Ford","Nissan","Honda"] 
-  }' 
+  }' ( writing indices to elasticsearch )
   
+ # VBoxManage list vms (listing created vms )
